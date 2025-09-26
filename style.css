@@ -1,0 +1,35 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Evita barras de rolagem */
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #0b2f5b;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1000; /* Garante que fique acima do mapa */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: #a3b1c6;
+}
+
+/* O mapa deve preencher o restante da tela */
+#air-map {
+    height: calc(100vh - 70px); /* Altura total da tela menos a altura do cabeçalho */
+    width: 100vw;
+    position: relative;
+}
